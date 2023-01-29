@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="fname" default="NAME"/>
+  <arg name="pcl_match" default="TRUTH"/>
+
+<!-- switch the next launch file for different environments. solar_farm is the one eddited only with solar panels only.  agriculture_world is the native clearpath environment. -->
+    <include file="$(find durable_gazebo_simulation)/launch/evora_world.launch">
+      <arg name="gui" default="false" />
+    </include>
+
+
+    <!-- FOR ROS MELODIC -->
+    <!--include file="$(find timed_roslaunch)/timed_roslaunch.launch"-->
+    <!-- FOR ROS KINETIC -->
+    <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">   
+      <arg name="time" value="1" />
+      <arg name="pkg" value="multi_jackal_tutorials" />
+      <arg name="file" value="evora_jackal.launch" />
+      <arg name="value" value="use_waypoint_coordenator:=true use_gps_pose_relay:=true use_navsat:=false cooperation_use:=true use_global_tf:=false"/>"/>
+    </include>
+
+    
+
+    <include ns="jackal0" file="$(find robot_localization)/launch/navsat_transform_only_jackal_sim.launch"/>
+    <include ns="jackal0" file="$(find georeference_pcl)/launch/matching.launch" if="$(arg pcl_match)" />
+
+    <node ns="jackal0" pkg="robot_localization" type="ekf_localization_node" name="ekf_localization_global">
+        <rosparam command="load" file="$(find robot_localization)/params/ekf_jackal_matching_sim.yaml" />
+        <remap from="/jackal0/odometry/filtered" to="/jackal0/robot_localization/robot_pose"/>
+    </node>
+    <node pkg="rostopic" type="rostopic" name="waypt_mgr_launch" args="pub /jackal0/waypoint_coordinator/goal_request coordinates_waypoint_manager/WaypointRequest '{latitude:  38.5416088749, longitude: -7.96163703096, orientation: 0.0}'" output="screen"/>  Central corridoor
+    <!-- <node pkg="rostopic" type="rostopic" name="waypt_mgr_launch" args="pub /jackal0/waypoint_coordinator/goal_request coordinates_waypoint_manager/WaypointRequest '{latitude:  38.541232753, longitude: -7.96088611236, orientation: 0.0}'" output="screen"/> -->
+    
+
+
+
+    <!-- <node pkg="rosbag" type="record" name="save_bag" args="/jackal0/gps/filtered /jackal0/gt/fix -O /home/durable/sim_resullt/$(arg fname)" output="screen" unless="$(arg pcl_match)"/> -->
+    <node pkg="rosbag" type="record" name="save_bag" args="/jackal0/gps/filtered /jackal0/gt/fix /jackal0/mapping/correction_gps_ekf/gps -O /home/durable/sim_resullt/$(arg fname)" output="screen"/>
+
+    <node pkg="tf" type="static_transform_publisher" name="map_broadcaster" args="0 0 0 0 0 0 1 map map3d 100" />
+    
+    <!-- <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">   
+      <arg name="time" value="2" />
+      <arg name="pkg" value="rostopic" />
+      <arg name="type" value="rostopic" />
+      <arg name="name" value="wp_pub" />
+      <arg name="args" value="pub /jackal0/waypoint_coordinator/goal_request coordinates_waypoint_manager/WaypointRequest latitude: 38.5404561224166 longitude: -7.9617174218275 orientation: 0.0"/>"/>
+    </include> -->
+    <!-- <node pkg="rostopic" type="rostopic" name="waypoint_coordinator" args="pub {/jackal0/wapoint_coordinator/goal_request coordinates_waypoint_manager/WaypointRequest 'latitude: 38.5404561224166' 'longitude: -7.9617174218275' 'orientation: 0.0'} -r 10"/> -->
+
+    <!-- <include file="$(find durable_gazebo_simulation)/launch/atrvjr.launch">
+      <arg name="use_waypoint_coordenator" value="true" />
+      <arg name="use_gps_pose_relay" value="true" />
+      <arg name="cooperation_use" value="true" />
+    </include> -->
+
+    <!-- <group>
+       <node pkg="tf" type="static_transform_publisher" name="static_world_to_map_tf"
+         args="0 0 0 0 0 0 map atrvjr/odom 20"/>
+    </group> -->
+
+</launch>

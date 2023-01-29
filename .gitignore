@@ -1,0 +1,4 @@
+src/.vscode/*
+src/robot_localization/*
+src/evora_topological_map/*
+src/coordinates_waypoint_manager/*

@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="ns" default="J1" />
+  <arg name="x" default="-83.5235812543"/> 
+  <arg name="y" default="-116.756596676"/>
+
+    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="$(arg ns)" />
+      <arg name="x" value="$(arg x)"/> 
+      <arg name="y" value="$(arg y)"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include>
+
+<!-- switch the next launch file for different environments. solar_farm is the one eddited only with solar panels only.  agriculture_world is the native clearpath environment. -->
+    <!-- <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">   
+      <arg name="time" value="0" />
+      <arg name="pkg" value="durable_gazebo_simulation" />
+      <arg name="file" value="evora_world.launch" />
+      <arg name="value" value="gui:=false"/>"/>
+       <arg name="node_name" value="map" />
+    </include> -->
+    <!-- <include file="$(find durable_gazebo_simulation)/launch/evora_world.launch"  >
+      <arg name="gui" default="true" />
+    </include> -->
+
+<!--Central corridoor centre 38.54177909379379,-7.961717421827496 -->
+      <!-- <arg name="x" value="78.8265148587"/> 
+      <arg name="y" value="0.397366315405"/> -->
+
+    <!-- Central corridoor centre   38.54036907127928,-7.961717421827496 -->
+      <!-- <arg name="x" value="-70.6031876356"/> 
+      <arg name="y" value="-0.965409303362"/> -->
+
+
+<!-- Corner 1 ...near 38.54177909379379,-7.961717421827496  -->
+
+
+    <!-- ****************************************4 robots ********************************************** -->
+    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J1" />
+      <arg name="x" value="-83.5235812543"/> 
+      <arg name="y" value="-116.756596676"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include>
+
+    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J2" />
+      <arg name="x" value="-41.7671790531"/> 
+      <arg name="y" value="-118.002636787"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include>    
+
+    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J3" />
+      <arg name="x" value="7.7458818872"/> 
+      <arg name="y" value="-118.29482535"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include>
+
+    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J4" />
+      <arg name="x" value="48.8139288181"/> 
+      <arg name="y" value="-118.002239205"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include> -->
+
+    <!-- ****************************************3 robots ********************************************** -->
+    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J1" />
+      <arg name="x" value="-83.5235812543"/> 
+      <arg name="y" value="-116.756596676"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include> -->
+
+    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J2" />
+      <arg name="x" value=" -21.6750654632"/> 
+      <arg name="y" value="-119.31157140"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include>     -->
+
+    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J3" />
+      <arg name="x" value=" 27.9232926427"/> 
+      <arg name="y" value="-116.665165611"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include> -->
+    <!-- ****************************************3 robots ********************************************** -->
+
+    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J5" />
+      <arg name="x" value="-61.0014862634"/> 
+      <arg name="y" value="-116.536731555"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include>    
+
+    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J6" />
+      <arg name="x" value="-21.0197103889"/> 
+      <arg name="y" value="-115.882746846"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include>
+
+    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J7" />
+      <arg name="x" value="30.9152271742"/> 
+      <arg name="y" value="-116.438658141"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include> -->
+
+    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J8" />
+      <arg name="x" value="93.4097759358"/> 
+      <arg name="y" value="-5.72601138819"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include> -->
+ 
+    <include file="$(find evora_topological_map)/launch/evora_topology.launch"/>
+    <!-- <include file="$(find fusion)/launch/fusion.launch"/> -->
+
+
+
+
+    <!-- -73.7109623716 106.316447495 -->
+
+
+    <!-- Central corridoor -->
+    <!-- <node pkg="rostopic" ns="J1" type="rostopic" name="waypt_mgr_launch" args="pub /J1/waypoint_coordinator/goal_request coordinates_waypoint_manager/WaypointRequest '{latitude:  38.5411206854701, longitude: -7.9617174218275, orientation: 0.0}'" output="screen"/>   -->
+    <!-- <node pkg="rostopic" ns="J8" type="rostopic" name="waypt_mgr_launch" args="pub /J8/waypoint_coordinator/goal_request coordinates_waypoint_manager/WaypointRequest '{latitude:  38.5411206854701, longitude: -7.9617174218275, orientation: 0.0}'" output="screen"/>   -->
+    
+    <!-- <node pkg="rostopic" ns="J1" type="rostopic" name="waypt_mgr_launch1" args="pub /J1/waypoint_coordinator/goal_request coordinates_waypoint_manager/WaypointRequest '{latitude:  38.5417790937938, longitude: -7.9617174218275, orientation: 0.0}'" output="screen"/>  
+    <node pkg="rostopic" ns="J2" type="rostopic" name="waypt_mgr_launch1" args="pub /J2/waypoint_coordinator/goal_request coordinates_waypoint_manager/WaypointRequest '{latitude:  38.5403690712793, longitude: -7.9617174218275, orientation: 0.0}'" output="screen"/>   -->
+    
+
+
+
+    <node pkg="tf" type="static_transform_publisher" name="map_broadcaster1" args="0 0 0 0 0 0 1 $(arg ns)/map $(arg ns)/map3d 100" />
+    <!-- <node pkg="tf" type="static_transform_publisher" name="map_broadcaster2" args="0 0 0 0 0 0 1 J2/map J2/map3d 100" />
+    <node pkg="tf" type="static_transform_publisher" name="map_broadcaster3" args="0 0 0 0 0 0 1 J3/map J3/map3d 100" /> -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="map_broadcaster4" args="0 0 0 0 0 0 1 J4/map J4/map3d 100" /> -->
+
+    <!-- <node pkg="rosbag" type="record" name="recorder" args="-o $(find fusion)/bags/$(arg ns).bag -e  '(.*)gps/filtered(.*)'  '(.*)velodyne_points(.*)' '(.*)gt/fix(.*)' /gazebo/model_states"/> -->
+    <!-- <node pkg="rosbag" type="record" name="recorder" args="-a -o $(find fusion)/bags/new.bag"/> -->
+
+
+</launch>
+<!-- left side -->
+    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">  
+      <arg name="ns" default="J1" />      
+      <arg name="x" value="-73.7109623716"/> 
+      <arg name="y" value="107.316447495"/>
+      <arg name="z" value="0.001"/>
+      <arg name="latitude" value="38.54099435020819"/>                               
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include>  -->
+<!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+      <arg name="ns" default="J3" />
+      <arg name="x" value="-0.0161712101648"/> 
+      <arg name="y" value="112.632849952"/>
+      <arg name="z" value="0.01"/>
+      <arg name="latitude" value="38.54099435020819"/>
+      <arg name="longitude" value="-7.961716729550872"/> 
+    </include> -->

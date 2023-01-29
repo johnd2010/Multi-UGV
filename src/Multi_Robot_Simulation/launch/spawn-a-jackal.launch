@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="ns" default="J0"/>
+  <arg name="x" default="0"/> 
+  <arg name="y" default="0"/>
+  <arg name="z" default="0"/>
+  <arg name="yaw" default="0"/>
+  <arg name="latitude" default="38.5409800049"/>
+  <arg name="longitude" default="-7.96170743709"/> 
+  <arg name="heading" default="0.0"/> 
+  <arg name="yawoffset" default="1.57"/> 
+
+    <!-- FOR ROS MELODIC -->
+    <!--include file="$(find timed_roslaunch)/timed_roslaunch.launch"-->
+    <!-- FOR ROS KINETIC -->
+    <include file="$(find multi_jackal_tutorials)/launch/evora_jackal.launch">
+      <arg name="ns" default="$(arg ns)" />
+      <arg name="x" value="$(arg x)"/> 
+      <arg name="y" value="$(arg y)"/>
+      <arg name="z" value="$(arg z)"/>
+      <arg name="yaw" value="$(arg yaw)"/>
+      <arg name="use_waypoint_coordenator" value="true"/>
+      <arg name="use_gps_pose_relay" value="true"/>
+      <arg name="use_navsat" value="false"/>
+      <arg name="cooperation_use" value="true"/>
+      <arg name="use_global_tf" value="false"/>
+      <arg name="latitude"  value="$(arg latitude)"/>
+      <arg name="longitude" value="$(arg longitude)"/> 
+      <arg name="heading" value="$(arg heading)"/> 
+      <arg name="yawoffset" value="$(arg yawoffset)"/> 
+       
+    </include>
+    
+
+    <include ns="$(arg ns)" file="$(find robot_localization)/launch/navsat_transform_only_jackal_sim.launch">
+    <arg name="ns" default="$(arg ns)" />
+    </include>
+    <!-- <include ns="$(arg ns)" file="$(find georeference_pcl)/launch/matching.launch" if="$(arg pcl_match)" /> -->
+
+    <node ns="$(arg ns)" pkg="robot_localization" type="ekf_localization_node" name="ekf_localization_global">
+        <rosparam command="load" file="$(find robot_localization)/params/ekf_jackal_matching_sim.yaml" subst_value="true"/>
+        <remap from="/$(arg ns)/odometry/filtered" to="/$(arg ns)/robot_localization/robot_pose"/>
+    </node> 
+
+</launch>
