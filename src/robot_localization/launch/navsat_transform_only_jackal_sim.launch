@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+
+<launch>
+  <arg name="ns" default="J1"/>
+  <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform_node" clear_params="true">
+    <rosparam command="load" file="$(find robot_localization)/params/navsat_transform_only_jackal_sim.yaml" />
+    <param name="utm_name" type="string" value="/$(arg ns)/utm" />
+    <remap from="imu/data" to="imu/data"/>
+    <remap from="odometry/filtered" to="robot_localization/robot_pose"/> 
+    <remap from="gps/fix" to="navsat/fix"/>
+    <!-- <remap from="gps/filtered" to="gps/filtered"/>
+    <remap from="odometry/gps" to="odometry/gps"/> -->
+
+
+<!--     <remap from="odometry/filtered" to="/odometry/filtered"/>    
+ -->
+    <!-- POR ESTES REMAPS COM UM ARG PARA O MBZIRC2020_0 -->
+
+  </node>
+</launch>

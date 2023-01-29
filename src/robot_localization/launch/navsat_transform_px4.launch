@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+
+<launch>
+  <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform_node" clear_params="true">
+    <rosparam command="load" file="$(find robot_localization)/params/navsat_transform_template.yaml" />
+
+    <remap from="imu/data" to="/mavros/imu/data"/>
+    <remap from="odometry/filtered" to="/robot_localization/robot_pose"/> 
+    <remap from="gps/fix" to="/mavros/global_position/raw/fix"/> <!--"/gps/fix"/>-->
+
+<!--     <remap from="odometry/filtered" to="/odometry/filtered"/>    
+ -->
+    <!-- POR ESTES REMAPS COM UM ARG PARA O MBZIRC2020_0 -->
+
+  </node>
+</launch>
+
