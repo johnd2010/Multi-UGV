@@ -1,5 +1,8 @@
-<sdf version='1.6'>
+<?xml version="1.0" ?>
+<?xml-model href="http://sdformat.org/schemas/root.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<sdf version='1.5'>
   <world name='default'>
+  <plugin name="mrs_gazebo_static_transform_republisher_plugin" filename="libMRSGazeboStaticTransformRepublisher.so"/>
     <light name='sun' type='directional'>
       <cast_shadows>0</cast_shadows>
       <pose frame=''>0 0 10 0 -0 0</pose>
@@ -14,9 +17,9 @@
       <direction>-0.5 -0.5 -1</direction>
     </light>
     <physics name='default_physics' default='0' type='ode'>
-      <max_step_size>0.0025</max_step_size>
+      <max_step_size>0.004</max_step_size>
       <real_time_factor>1</real_time_factor>
-      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_update_rate>250</real_time_update_rate>
     </physics>
     <scene>
       <ambient>1 1 1 1</ambient>
@@ -41,10 +44,10 @@
       <wall_time>0 0</wall_time>
       <iterations>684167</iterations>
       <model name='agriculture_geom'>
-        <pose frame=''>-105.2 109.231 -0.5 0 -0 0</pose>
+        <pose frame=''>-105.2 109.231 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='agriculture_world_link'>
-          <pose frame=''>-105.2 109.231 -0.5 0 -0 0</pose>
+          <pose frame=''>-105.2 109.231 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -82,9 +85,10 @@
         <collision name='agriculture_world_link_collision'>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
+          <!-- <mesh filename="model://evora_farm.dae"/> -->
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/opt/durable_ws/src/Multi_Robot_Simulation/meshes/evora_farm.dae</uri>
+              <uri>model://evora_farm/evora_farm.dae</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -104,9 +108,10 @@
         <visual name='agriculture_world_link_visual'>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
+          <!-- <mesh filename="package://durable_gazebo_simulation/meshes/evora_farm.dae"/> -->
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/opt/durable_ws/src/Multi_Robot_Simulation/meshes/evora_farm.dae</uri>
+              <uri>model://evora_farm/evora_farm.dae</uri>
             </mesh>
           </geometry>
         </visual>

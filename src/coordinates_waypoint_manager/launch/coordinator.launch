@@ -6,7 +6,7 @@
         <param name="move_base_node" type="string" value="/$(arg ns)/move_base"/>
         <param name="cmd_vel_topic" type="string" value="/$(arg ns)/jackal_velocity_controller/cmd_vel"/>
 
-        <param name="goal_frame_id" type="string" value="$(arg ns)/map"/>
+        <param name="goal_frame_id" type="string" value="$(arg ns)/odom"/>
         <param name="goal_sub_topic_name" type="string" value="goal_request"/>
         <param name="result_pub_topic_name" type="string" value="goal_result"/>
         <param name="utm_frame_id" type="string" value="$(arg ns)/utm"/>

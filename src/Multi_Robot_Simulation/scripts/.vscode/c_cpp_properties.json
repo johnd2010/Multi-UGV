@@ -14,7 +14,7 @@
         "/home/durable/catkin_ws/src/atrv_ur5e/laser_line_extraction/include/**",
         "/home/durable/catkin_ws/src/atrv_ur5e/atrvjr/drivers/novatel/include/**",
         "/home/durable/catkin_ws/src/atrv_ur5e/atrvjr/drivers/rflex/include/**",
-        "/home/durable/catkin_ws/src/atrv_ur5e/atrvjr/navigation/robot_localization/include/**",
+        "/home/durable/catkin_ws/src/atrv_ur5e/atrvjr/navigation/jackal_robot_localization/include/**",
         "/home/durable/catkin_ws/src/atrv_ur5e/generic/communication/serial/include/**",
         "/home/durable/catkin_ws/src/atrv_ur5e/universal_robots_ros_driver/ur_calibration/include/**",
         "/home/durable/catkin_ws/src/atrv_ur5e/universal_robots_ros_driver/ur_controllers/include/**",

@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/durable20/Multi_Agent_Framework/utils/devel/include/**",
+        "/home/durable20/workspace/devel/include/**",
+        "/home/durable20/mrs_workspace/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/durable20/workspace/src/example_ros_packages/ros_packages/example_ros_pluginlib/example_manager/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mavros/libmavconn/include/**",
+        "/home/durable20/mrs_workspace/src/simulation/ros_packages/mavlink_sitl_gazebo/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mavros/mavros/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mavros/mavros_msgs/include/**",
+        "/home/durable20/mrs_workspace/src/simulation/ros_packages/mrs_gazebo_common_resources/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mrs_lib/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mrs_rviz_plugins/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mrs_uav_controllers/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mrs_uav_general/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mrs_uav_managers/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mrs_uav_odometry/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mrs_uav_status/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mrs_uav_trackers/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mrs_uav_trajectory_generation/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/thirdparty/nlopt_ros/include/**",
+        "/home/durable20/Multi_Agent_Framework/utils/src/Multi-UGV/src/jackal_robot_localization/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/mavros/test_mavros/include/**",
+        "/home/durable20/mrs_workspace/src/uav_core/ros_packages/thirdparty/tf2/tf2/include/**",
+        "/home/durable20/workspace/src/example_ros_packages/ros_packages/example_ros_vision/include/**",
+        "/home/durable20/workspace/src/example_ros_packages/ros_packages/example_ros_uav/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

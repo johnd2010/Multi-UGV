@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+
+<launch>
+  <node pkg="jackal_robot_localization" type="navsat_transform_node" name="navsat_transform_node_baseline" clear_params="true">
+    <rosparam command="load" file="$(find jackal_robot_localization)/params/navsat_transform_only_jackal_sim_baseline.yaml" />
+
+    <remap from="imu/data" to="imu/data"/>
+    <remap from="odometry/filtered" to="jackal_robot_localization/robot_baseline"/> 
+    <remap from="gps/fix" to="navsat/fix"/>
+    <remap from="gps/filtered" to="gps/baseline/filtered"/>
+    <remap from="odometry/gps" to="odometry/baseline/gps"/>
+
+
+<!--     <remap from="odometry/filtered" to="/odometry/filtered"/>    
+ -->
+    <!-- POR ESTES REMAPS COM UM ARG PARA O MBZIRC2020_0 -->
+
+  </node>
+</launch>

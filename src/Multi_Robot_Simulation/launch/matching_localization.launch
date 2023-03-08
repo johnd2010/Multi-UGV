@@ -2,13 +2,13 @@
 
 <launch>
 
- <!-- Change the /home/durable/durable_sim_stuff/src/durable-common/robot_localization/launch/navsat_transform_only_jackal_sim.launch     -->
+ <!-- Change the /home/durable/durable_sim_stuff/src/durable-common/jackal_robot_localization/launch/navsat_transform_only_jackal_sim.launch     -->
 
-    <include ns="jackal0" file="$(find robot_localization)/launch/navsat_transform_only_jackal_sim.launch"/>
+    <include ns="jackal0" file="$(find jackal_robot_localization)/launch/navsat_transform_only_jackal_sim.launch"/>
 
-    <node ns="jackal0" pkg="robot_localization" type="ekf_localization_node" name="ekf_localization_global">
-        <rosparam command="load" file="$(find robot_localization)/params/ekf_jackal_matching_sim.yaml" />
-        <remap from="/jackal0/odometry/filtered" to="/jackal0/robot_localization/robot_pose"/>
+    <node ns="jackal0" pkg="jackal_robot_localization" type="ekf_localization_node" name="ekf_localization_global">
+        <rosparam command="load" file="$(find jackal_robot_localization)/params/ekf_jackal_matching_sim.yaml" />
+        <remap from="/jackal0/odometry/filtered" to="/jackal0/jackal_robot_localization/robot_pose"/>
     </node>
 
     <node pkg="rosbag" type="record" name="save_bag" args="-a -O /home/durable/sim_resullt/without_matching.bag" output="screen"/>

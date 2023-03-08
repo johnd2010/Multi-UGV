@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+
+<!-- Launches Jackal Gazebo simulation in an empty world. Then control the robot 
+     using the interactive markers, or the '2D Nav Goal' button in RVIZ.
+     To open Gazebo, enter 'gzclient' in a new tab.
+     
+     To change the world, set 'world' to a valid file in 
+     'multi_jackal_gazebo/worlds'. Loading a world for the first time might 
+     take a while.
+     
+     To change the equipment on the Jackal, set 'config' to a valid file in
+     'multi_jackal_description/urdf/configs'.
+     The config might require a 'config_id' for further customisation. -->
+
+<launch>
+  <arg name="ns"        default="jackal0"/>
+  <arg name="config"    default="base"/>
+  <arg name="config_id" default="0"/>
+  <arg name="world"     default="empty.world"/>
+  <arg name="gui"       default="false"/>
+  <arg name="rviz"      default="false"/>
+  <arg name="global_frame" default="$(arg ns)/odom"/>
+  <!-- <arg name="global_frame"  default="map"/>  -->
+  <arg name="local_frame"  default="$(arg ns)/odom"/>
+  <arg name="use_global_tf"  default="true"/>
+  <arg name="use_waypoint_coordenator" default="false"/>
+  <arg name="use_gps_pose_relay" default="false"/>
+  <arg name="use_navsat" default="false"/>
+  <arg name="cooperation_use" default="false"/>
+  <arg name="gps_drift" default="0.001"/>
+
+  <group ns="$(arg ns)" if="$(arg cooperation_use)">
+    <include file="$(find cooperation_use)/launch/coordinator.launch"/>
+  </group>
+
+  <group ns="$(arg ns)" if="$(arg use_waypoint_coordenator)">
+    <include file="$(find coordinates_waypoint_manager)/launch/coordinator.launch"/>
+  </group>
+
+  <group ns="$(arg ns)" if="$(arg use_gps_pose_relay)">
+    <include file="$(find cooperation_use)/launch/gps_pose_relay.launch">
+      <arg name="gps_pose_topic_name" value="/$(arg ns)/gps/filtered"/>
+      <arg name="imu_topic_name" value="/$(arg ns)/imu/data"/>
+      <arg name="relay_result_topic_name" value="/$(arg ns)/geopose"/>
+    </include>
+  </group>
+
+  <group ns="$(arg ns)" if="$(arg use_navsat)">
+    <include file="$(find jackal_robot_localization)/launch/navsat_transform_jackal_sim.launch"/>
+  </group>
+
+  <!-- Start Gazebo.
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui"          value="$(arg gui)"/>
+    <arg name="world_name"   value="$(find multi_jackal_tutorials)/worlds/$(arg world)"/>
+  </include> -->
+  
+  <!-- Spawn the robot. -->
+  <include file="$(find multi_jackal_base)/launch/jackal_base.launch">
+    <arg name="ns"             value="$(arg ns)"/>
+    <arg name="config"         value="$(arg config)"/>
+    <arg name="config_id"      value="$(arg config_id)"/>
+    <arg name="use_move_base"  value="true"/>
+    <arg name="use_global_ekf" default="false"/>
+    <arg name="x"              value="88.5140168345"/>
+    <arg name="y"              value="5.2268350293"/>
+    <arg name="z"              value="0.1"/>
+    <arg name="yaw"              value="-1.528641"/>
+    <arg name="global_frame" value="$(arg global_frame)"/>
+    <arg name="local_frame"  value="$(arg local_frame)"/>
+    <arg name="use_global_tf"  value="$(arg use_global_tf)"/>
+    <arg name="gps_drift" default="$(arg gps_drift)"/>
+    <!-- <arg name="global_frame"   value="map"/>
+    <arg name="local_frame"    value="map"/> -->
+  </include>
+
+    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan">
+        <remap from="cloud_in" to="$(arg ns)/velodyne_points"/>
+        <remap from="scan" to="$(arg ns)/front/scan"/>
+        <rosparam>
+
+            min_height: -0.1
+            max_height: 0.1
+
+            angle_min: -3.14 # -M_PI/2
+            angle_max: 3.14 # M_PI/2
+            angle_increment: 0.0087 # M_PI/360.0
+            scan_time: 0.1
+            range_min: 0.5
+            range_max: 2000.0
+            use_inf: true
+
+            # Concurrency level, affects number of pointclouds queued for processing and number of threads used
+            # 0 : Detect number of cores
+            # 1 : Single threaded
+            # 2->inf : Parallelism level
+            concurrency_level: 0
+        </rosparam>
+    </node>
+
+    <group ns="waypoint_coordinator">
+        <param name="move_base_node" type="string" value="/jackal0/move_base"/>
+        <param name="cmd_vel_topic" type="string" value="/jackal0/jackal_velocity_controller/cmd_vel"/>
+
+        <param name="goal_frame_id" type="string" value="map"/>
+        <param name="goal_sub_topic_name" type="string" value="goal_request"/>
+        <param name="result_pub_topic_name" type="string" value="goal_result"/>
+
+        <node name="waypoint_controller" pkg="coordinates_waypoint_manager" type="coordinator.py" output="screen"/>
+    </group>
+
+  <!-- View in RVIZ. -->
+  <!-- <group if="$(arg rviz)">
+    <node name="rviz" pkg="rviz" type="rviz" ns="$(arg ns)" args="-d $(find multi_jackal_tutorials)/rviz/one_jackal.rviz" >
+      <remap from="/move_base_simple/goal" to="/$(arg ns)/move_base_simple/goal"/>
+    </node>
+  </group> -->
+
+</launch>

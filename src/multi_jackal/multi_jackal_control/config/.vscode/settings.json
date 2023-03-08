@@ -1,0 +1,8 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/durable20/Multi_Agent_Framework/utils/devel/lib/python3/dist-packages",
+        "/home/durable20/workspace/devel/lib/python3/dist-packages",
+        "/home/durable20/mrs_workspace/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
