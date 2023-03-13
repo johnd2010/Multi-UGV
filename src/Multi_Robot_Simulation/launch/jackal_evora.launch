@@ -165,7 +165,8 @@
     <!-- <node pkg="tf" type="static_transform_publisher" name="map_broadcaster4" args="0 0 0 0 0 0 1 J4/map J4/map3d 100" /> -->
 
     <!-- <node pkg="rosbag" type="record" name="recorder" args="-o $(find fusion)/bags/$(arg ns).bag -e  '(.*)gps/filtered(.*)'  '(.*)velodyne_points(.*)' '(.*)gt/fix(.*)' /gazebo/model_states"/> -->
-    <!-- <node pkg="rosbag" type="record" name="recorder" args="-a -o $(find fusion)/bags/new.bag"/> -->
+    <!-- <node pkg="rosbag" type="record" name="recorder" args="-o $(find fusion)/bags/$(arg ns).bag -e  '(.*)jackal_velocity_controller/odom(.*)' '(.*)gps/filtered(.*)' '(.*)imu/data(.*)' '(.*)velodyne_points(.*)'  '(.*)gt/fix(.*)' /gazebo/model_states"/> -->
+    <!-- <node pkg="rosbag" type="record" name="recorder" args="-a -o $(find fusion)/bags/$(arg ns)_all.bag"/> -->
 
 
 </launch>

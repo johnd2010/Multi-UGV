@@ -24,7 +24,7 @@
     <!-- Velodyne VLP16 -->
     <xacro:if value="${lidar_3d_model == 'vlp16'}">
       <xacro:vlp16_mount topic="${topic}" tower="${tower}" prefix="${prefix}" parent_link="${parent}" >
-        <origin xyz="$(optenv JACKAL_LASER_3D_OFFSET 0 0 0)" rpy="$(optenv JACKAL_LASER_3D_RPY 0 0 ${M_PI_Half})" />
+        <origin xyz="$(optenv JACKAL_LASER_3D_OFFSET 0 0 0)" rpy="$(optenv JACKAL_LASER_3D_RPY 0 0 0)" />
       </xacro:vlp16_mount>
     </xacro:if>
     <!-- Velodyne HDL-32E -->
