@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/point_cloud_localization/share/point_cloud_localization/cmake/point_cloud_localizationConfig.cmake

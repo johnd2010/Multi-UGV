@@ -1,0 +1,5 @@
+Symlinking /home/irsg/Multi-UGV/devel/share/point_cloud_mapper/cmake/point_cloud_mapperConfig.cmake
+Symlinking /home/irsg/Multi-UGV/devel/share/point_cloud_mapper/cmake/point_cloud_mapperConfig-version.cmake
+Symlinking /home/irsg/Multi-UGV/devel/lib/libpoint_cloud_mapper.so
+Symlinking /home/irsg/Multi-UGV/devel/lib/pkgconfig/point_cloud_mapper.pc
+Symlinking /home/irsg/Multi-UGV/devel/lib/point_cloud_mapper/point_cloud_mapper_node

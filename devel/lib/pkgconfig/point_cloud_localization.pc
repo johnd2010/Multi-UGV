@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/point_cloud_localization/lib/pkgconfig/point_cloud_localization.pc

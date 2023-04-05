@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target test_same_output_different_num_threads[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/test_same_output_different_num_threads.dir/test/test_same_output_different_num_threads.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/irsg/Multi-UGV/devel/.private/multithreaded_gicp/lib/multithreaded_gicp/test_same_output_different_num_threads[0m
+[100%] Built target test_same_output_different_num_threads

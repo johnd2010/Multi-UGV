@@ -1,0 +1,8 @@
+prefix=/home/irsg/Multi-UGV/install
+
+Name: multithreaded_gicp
+Description: Description of multithreaded_gicp
+Version: 0.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

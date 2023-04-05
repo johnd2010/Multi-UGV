@@ -1,0 +1,8 @@
+prefix=/home/irsg/Multi-UGV/install
+
+Name: sensor_description
+Description: Description of sensor_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

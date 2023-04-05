@@ -1,0 +1,5 @@
+Symlinking /home/irsg/Multi-UGV/devel/share/locus/cmake/locusConfig-version.cmake
+Symlinking /home/irsg/Multi-UGV/devel/share/locus/cmake/locusConfig.cmake
+Symlinking /home/irsg/Multi-UGV/devel/lib/liblocus.so
+Symlinking /home/irsg/Multi-UGV/devel/lib/pkgconfig/locus.pc
+Symlinking /home/irsg/Multi-UGV/devel/lib/locus/locus_node

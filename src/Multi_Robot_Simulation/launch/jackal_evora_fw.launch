@@ -5,7 +5,7 @@
   <arg name="pcl_match" default="TRUTH"/>
 
 <!-- switch the next launch file for different environments. solar_farm is the one eddited only with solar panels only.  agriculture_world is the native clearpath environment. -->
-    <include file="$(find durable_gazebo_simulation)/launch/evora_world.launch">
+    <include file="$(find multi_ugv)/launch/evora_world.launch">
       <arg name="gui" default="false" />
     </include>
 
@@ -49,7 +49,7 @@
     </include> -->
     <!-- <node pkg="rostopic" type="rostopic" name="waypoint_coordinator" args="pub {/jackal0/wapoint_coordinator/goal_request coordinates_waypoint_manager/WaypointRequest 'latitude: 38.5404561224166' 'longitude: -7.9617174218275' 'orientation: 0.0'} -r 10"/> -->
 
-    <!-- <include file="$(find durable_gazebo_simulation)/launch/atrvjr.launch">
+    <!-- <include file="$(find multi_ugv)/launch/atrvjr.launch">
       <arg name="use_waypoint_coordenator" value="true" />
       <arg name="use_gps_pose_relay" value="true" />
       <arg name="cooperation_use" value="true" />

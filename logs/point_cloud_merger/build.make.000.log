@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target point_cloud_merger[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/point_cloud_merger.dir/src/PointCloudMerger.cc.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/irsg/Multi-UGV/devel/.private/point_cloud_merger/lib/libpoint_cloud_merger.so[0m
+[ 50%] Built target point_cloud_merger
+[35m[1mScanning dependencies of target point_cloud_merger_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/point_cloud_merger_node.dir/src/point_cloud_merger.cc.o[0m
+[100%] [32m[1mLinking CXX executable /home/irsg/Multi-UGV/devel/.private/point_cloud_merger/lib/point_cloud_merger/point_cloud_merger_node[0m
+[100%] Built target point_cloud_merger_node

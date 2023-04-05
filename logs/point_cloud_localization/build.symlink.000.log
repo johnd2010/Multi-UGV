@@ -1,0 +1,5 @@
+Symlinking /home/irsg/Multi-UGV/devel/share/point_cloud_localization/cmake/point_cloud_localizationConfig.cmake
+Symlinking /home/irsg/Multi-UGV/devel/share/point_cloud_localization/cmake/point_cloud_localizationConfig-version.cmake
+Symlinking /home/irsg/Multi-UGV/devel/lib/libpoint_cloud_localization.so
+Symlinking /home/irsg/Multi-UGV/devel/lib/pkgconfig/point_cloud_localization.pc
+Symlinking /home/irsg/Multi-UGV/devel/lib/point_cloud_localization/point_cloud_localization_node

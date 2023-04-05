@@ -1,0 +1,8 @@
+prefix=/home/irsg/Multi-UGV/devel/.private/point_cloud_odometry
+
+Name: point_cloud_odometry
+Description: Description of point_cloud_odometry
+Version: 0.0.0
+Cflags: -I/home/irsg/Multi-UGV/src/LOCUS/point_cloud_odometry/include
+Libs: -L${prefix}/lib -lpoint_cloud_odometry
+Requires: diagnostic_msgs geometry_msgs geometry_utils multithreaded_gicp parameter_utils pcl_ros roscpp sensor_msgs tf tf2_ros frontend_utils

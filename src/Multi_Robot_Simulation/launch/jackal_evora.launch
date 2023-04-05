@@ -5,7 +5,7 @@
   <arg name="x" default="-83.5235812543"/> 
   <arg name="y" default="-116.756596676"/>
 
-    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="$(arg ns)" />
       <arg name="x" value="$(arg x)"/> 
       <arg name="y" value="$(arg y)"/>
@@ -17,12 +17,12 @@
 <!-- switch the next launch file for different environments. solar_farm is the one eddited only with solar panels only.  agriculture_world is the native clearpath environment. -->
     <!-- <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">   
       <arg name="time" value="0" />
-      <arg name="pkg" value="durable_gazebo_simulation" />
+      <arg name="pkg" value="multi_ugv" />
       <arg name="file" value="evora_world.launch" />
       <arg name="value" value="gui:=false"/>"/>
        <arg name="node_name" value="map" />
     </include> -->
-    <!-- <include file="$(find durable_gazebo_simulation)/launch/evora_world.launch"  >
+    <!-- <include file="$(find multi_ugv)/launch/evora_world.launch"  >
       <arg name="gui" default="true" />
     </include> -->
 
@@ -39,7 +39,7 @@
 
 
     <!-- ****************************************4 robots ********************************************** -->
-    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <!-- <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J1" />
       <arg name="x" value="-83.5235812543"/> 
       <arg name="y" value="-116.756596676"/>
@@ -48,7 +48,7 @@
       <arg name="longitude" value="-7.961716729550872"/> 
     </include>
 
-    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J2" />
       <arg name="x" value="-41.7671790531"/> 
       <arg name="y" value="-118.002636787"/>
@@ -57,7 +57,7 @@
       <arg name="longitude" value="-7.961716729550872"/> 
     </include>    
 
-    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J3" />
       <arg name="x" value="7.7458818872"/> 
       <arg name="y" value="-118.29482535"/>
@@ -66,7 +66,7 @@
       <arg name="longitude" value="-7.961716729550872"/> 
     </include>
 
-    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J4" />
       <arg name="x" value="48.8139288181"/> 
       <arg name="y" value="-118.002239205"/>
@@ -76,7 +76,7 @@
     </include> -->
 
     <!-- ****************************************3 robots ********************************************** -->
-    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <!-- <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J1" />
       <arg name="x" value="-83.5235812543"/> 
       <arg name="y" value="-116.756596676"/>
@@ -85,7 +85,7 @@
       <arg name="longitude" value="-7.961716729550872"/> 
     </include> -->
 
-    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <!-- <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J2" />
       <arg name="x" value=" -21.6750654632"/> 
       <arg name="y" value="-119.31157140"/>
@@ -94,7 +94,7 @@
       <arg name="longitude" value="-7.961716729550872"/> 
     </include>     -->
 
-    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <!-- <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J3" />
       <arg name="x" value=" 27.9232926427"/> 
       <arg name="y" value="-116.665165611"/>
@@ -104,7 +104,7 @@
     </include> -->
     <!-- ****************************************3 robots ********************************************** -->
 
-    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <!-- <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J5" />
       <arg name="x" value="-61.0014862634"/> 
       <arg name="y" value="-116.536731555"/>
@@ -113,7 +113,7 @@
       <arg name="longitude" value="-7.961716729550872"/> 
     </include>    
 
-    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J6" />
       <arg name="x" value="-21.0197103889"/> 
       <arg name="y" value="-115.882746846"/>
@@ -122,7 +122,7 @@
       <arg name="longitude" value="-7.961716729550872"/> 
     </include>
 
-    <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J7" />
       <arg name="x" value="30.9152271742"/> 
       <arg name="y" value="-116.438658141"/>
@@ -131,7 +131,7 @@
       <arg name="longitude" value="-7.961716729550872"/> 
     </include> -->
 
-    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+    <!-- <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J8" />
       <arg name="x" value="93.4097759358"/> 
       <arg name="y" value="-5.72601138819"/>
@@ -171,7 +171,7 @@
 
 </launch>
 <!-- left side -->
-    <!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">  
+    <!-- <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">  
       <arg name="ns" default="J1" />      
       <arg name="x" value="-73.7109623716"/> 
       <arg name="y" value="107.316447495"/>
@@ -179,7 +179,7 @@
       <arg name="latitude" value="38.54099435020819"/>                               
       <arg name="longitude" value="-7.961716729550872"/> 
     </include>  -->
-<!-- <include file="$(find durable_gazebo_simulation)/launch/spawn-a-jackal.launch">
+<!-- <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="J3" />
       <arg name="x" value="-0.0161712101648"/> 
       <arg name="y" value="112.632849952"/>

@@ -8,8 +8,8 @@
     <arg name="log_output" default="screen" />
 
     <include file="$(find mavros)/launch/node.launch">
-        <arg name="pluginlists_yaml" value="$(find durable_gazebo_simulation)/launch/pluginlists.yaml" />
-        <arg name="config_yaml" value="$(find durable_gazebo_simulation)/launch/apm_config.yaml" />
+        <arg name="pluginlists_yaml" value="$(find multi_ugv)/launch/pluginlists.yaml" />
+        <arg name="config_yaml" value="$(find multi_ugv)/launch/apm_config.yaml" />
 
         <arg name="fcu_url" value="$(arg fcu_url)" />
         <arg name="gcs_url" value="$(arg gcs_url)" />

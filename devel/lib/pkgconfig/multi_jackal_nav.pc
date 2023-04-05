@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/multi_jackal_nav/lib/pkgconfig/multi_jackal_nav.pc

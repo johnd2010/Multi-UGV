@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/core_msgs/share/common-lisp/ros/core_msgs/msg/_package.lisp

@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/core_msgs/share/roseus/ros/core_msgs/manifest.l

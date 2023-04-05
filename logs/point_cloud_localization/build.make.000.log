@@ -1,0 +1,311 @@
+[35m[1mScanning dependencies of target point_cloud_localization[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/point_cloud_localization.dir/src/PointCloudLocalization.cc.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/point_cloud_localization.dir/src/utils.cc.o[0m
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp: In instantiation of ‘[01m[Kvoid pclomp::VoxelGridCovariance<PointT>::applyFilter(pclomp::VoxelGridCovariance<PointT>::PointCloud&) [with PointT = pcl::PointXYZINormal; pclomp::VoxelGridCovariance<PointT>::PointCloud = pcl::PointCloud<pcl::PointXYZINormal>][m[K’:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:49:1:[m[K   required from here
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:113:35:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint pcl::getFieldIndex(const pcl::PointCloud<PointT>&, const string&, std::vector<pcl::PCLPointField>&) [with PointT = pcl::PointXYZINormal; std::string = std::__cxx11::basic_string<char>][m[K’ is deprecated: use getFieldIndex<PointT> (field_name, fields) instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  113 |   rgba_index = [01;35m[Kpcl::getFieldIndex (*input_, "rgb", fields)[m[K;
+      |                [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/common/io.h:586[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/file_io.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:9[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/common/impl/io.hpp:50:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   50 | [01;36m[Kpcl[m[K::getFieldIndex (const pcl::PointCloud<PointT> &,
+      | [01;36m[K^~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:113:35:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint pcl::getFieldIndex(const pcl::PointCloud<PointT>&, const string&, std::vector<pcl::PCLPointField>&) [with PointT = pcl::PointXYZINormal; std::string = std::__cxx11::basic_string<char>][m[K’ is deprecated: use getFieldIndex<PointT> (field_name, fields) instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  113 |   rgba_index = [01;35m[Kpcl::getFieldIndex (*input_, "rgb", fields)[m[K;
+      |                [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/common/io.h:586[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/file_io.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:9[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/common/impl/io.hpp:50:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   50 | [01;36m[Kpcl[m[K::getFieldIndex (const pcl::PointCloud<PointT> &,
+      | [01;36m[K^~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:115:37:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint pcl::getFieldIndex(const pcl::PointCloud<PointT>&, const string&, std::vector<pcl::PCLPointField>&) [with PointT = pcl::PointXYZINormal; std::string = std::__cxx11::basic_string<char>][m[K’ is deprecated: use getFieldIndex<PointT> (field_name, fields) instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  115 |     rgba_index = [01;35m[Kpcl::getFieldIndex (*input_, "rgba", fields)[m[K;
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/common/io.h:586[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/file_io.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:9[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/common/impl/io.hpp:50:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   50 | [01;36m[Kpcl[m[K::getFieldIndex (const pcl::PointCloud<PointT> &,
+      | [01;36m[K^~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:115:37:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint pcl::getFieldIndex(const pcl::PointCloud<PointT>&, const string&, std::vector<pcl::PCLPointField>&) [with PointT = pcl::PointXYZINormal; std::string = std::__cxx11::basic_string<char>][m[K’ is deprecated: use getFieldIndex<PointT> (field_name, fields) instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  115 |     rgba_index = [01;35m[Kpcl::getFieldIndex (*input_, "rgba", fields)[m[K;
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/common/io.h:586[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/file_io.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:9[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/common/impl/io.hpp:50:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   50 | [01;36m[Kpcl[m[K::getFieldIndex (const pcl::PointCloud<PointT> &,
+      | [01;36m[K^~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:127:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint pcl::getFieldIndex(const pcl::PointCloud<PointT>&, const string&, std::vector<pcl::PCLPointField>&) [with PointT = pcl::PointXYZINormal; std::string = std::__cxx11::basic_string<char>][m[K’ is deprecated: use getFieldIndex<PointT> (field_name, fields) instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  127 |     int distance_idx = [01;35m[Kpcl::getFieldIndex (*input_, filter_field_name_, fields)[m[K;
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/common/io.h:586[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/file_io.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:9[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/common/impl/io.hpp:50:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   50 | [01;36m[Kpcl[m[K::getFieldIndex (const pcl::PointCloud<PointT> &,
+      | [01;36m[K^~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:127:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint pcl::getFieldIndex(const pcl::PointCloud<PointT>&, const string&, std::vector<pcl::PCLPointField>&) [with PointT = pcl::PointXYZINormal; std::string = std::__cxx11::basic_string<char>][m[K’ is deprecated: use getFieldIndex<PointT> (field_name, fields) instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  127 |     int distance_idx = [01;35m[Kpcl::getFieldIndex (*input_, filter_field_name_, fields)[m[K;
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/common/io.h:586[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/file_io.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_conversions/pcl_conversions.h:70[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:9[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/common/impl/io.hpp:50:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   50 | [01;36m[Kpcl[m[K::getFieldIndex (const pcl::PointCloud<PointT> &,
+      | [01;36m[K^~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:136:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  136 |         if (![01;35m[Kpcl_isfinite (input_->points[cp].x)[m[K ||
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:136:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  136 |         if (![01;35m[Kpcl_isfinite (input_->points[cp].x)[m[K ||
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:137:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  137 |             ![01;35m[Kpcl_isfinite (input_->points[cp].y)[m[K ||
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:137:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  137 |             ![01;35m[Kpcl_isfinite (input_->points[cp].y)[m[K ||
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:138:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  138 |             ![01;35m[Kpcl_isfinite (input_->points[cp].z)[m[K)
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:138:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  138 |             ![01;35m[Kpcl_isfinite (input_->points[cp].z)[m[K)
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:213:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  213 |         if (![01;35m[Kpcl_isfinite (input_->points[cp].x)[m[K ||
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:213:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  213 |         if (![01;35m[Kpcl_isfinite (input_->points[cp].x)[m[K ||
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:214:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  214 |             ![01;35m[Kpcl_isfinite (input_->points[cp].y)[m[K ||
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:214:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  214 |             ![01;35m[Kpcl_isfinite (input_->points[cp].y)[m[K ||
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:215:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  215 |             ![01;35m[Kpcl_isfinite (input_->points[cp].z)[m[K)
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/ndt_omp.h:536[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:50[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/home/irsg/Multi-UGV/src/LOCUS/multithreaded_gicp/include/multithreaded_ndt/voxel_grid_covariance_omp_impl.hpp:215:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool pcl_isfinite(T&&) [with T = const float&][m[K’ is deprecated: use std::isfinite instead of pcl_isfinite [[01;35m[K-Wdeprecated-declarations[m[K]
+  215 |             ![01;35m[Kpcl_isfinite (input_->points[cp].z)[m[K)
+      |              [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.10/pcl/PCLHeader.h:10[m[K,
+                 from [01m[K/usr/include/pcl-1.10/pcl/point_cloud.h:47[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_ros/point_cloud.h:5[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonStructs.h:2[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include/frontend_utils/CommonFunctions.h:3[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include/point_cloud_localization/PointCloudLocalization.h:41[m[K,
+                 from [01m[K/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/src/PointCloudLocalization.cc:10[m[K:
+[01m[K/usr/include/pcl-1.10/pcl/pcl_macros.h:142:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  142 | bool [01;36m[Kpcl_isfinite[m[K (T&& x) { return std::isfinite (std::forward<T> (x)); }
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+[ 60%] [32m[1mLinking CXX shared library /home/irsg/Multi-UGV/devel/.private/point_cloud_localization/lib/libpoint_cloud_localization.so[0m
+[ 60%] Built target point_cloud_localization
+[35m[1mScanning dependencies of target point_cloud_localization_node[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/point_cloud_localization_node.dir/src/point_cloud_localization.cc.o[0m
+[100%] [32m[1mLinking CXX executable /home/irsg/Multi-UGV/devel/.private/point_cloud_localization/lib/point_cloud_localization/point_cloud_localization_node[0m
+[100%] Built target point_cloud_localization_node

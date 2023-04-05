@@ -108,7 +108,7 @@
         <visual name='agriculture_world_link_visual'>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
-          <!-- <mesh filename="package://durable_gazebo_simulation/meshes/evora_farm.dae"/> -->
+          <!-- <mesh filename="package://multi_ugv/meshes/evora_farm.dae"/> -->
             <mesh>
               <scale>1 1 1</scale>
               <uri>model://evora_farm/evora_farm.dae</uri>

@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/multi_jackal_description/lib/pkgconfig/multi_jackal_description.pc

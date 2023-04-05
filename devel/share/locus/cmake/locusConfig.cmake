@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/locus/share/locus/cmake/locusConfig.cmake

@@ -80,7 +80,7 @@ catkin build
 
 Add the path to new gazebo models by adding the following line in bashrc (don't forget to adjust to your path and reload terminals)
 ```
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/durable_gazebo_simulation/models:${GAZEBO_MODEL_PATH}
+export GAZEBO_MODEL_PATH=~/catkin_ws/src/multi_ugv/models:${GAZEBO_MODEL_PATH}
 ```
 
 Finally, do not forget to source the environment
@@ -95,7 +95,7 @@ After the installation is finished, the package is ready to use. The Durable sim
 To run the simulation, 3 terminals are required.
 On the first run the gazebo instance:
 ```
-roslaunch durable_gazebo_simulation durable_sim.launch 
+roslaunch multi_ugv durable_sim.launch 
 ```
 On the second one run the UAV simulator, run this command from the ArduCopter folder in the ardupilot package (using Evora Power plant location, not required)
 ```
@@ -103,7 +103,7 @@ sim_vehicle.py -v ArduCopter -f gazebo-iris  -m --mav10 --map --console -I0 -L E
 ```
 Lastly run mavros to have the UAV topics displayed
 ```
-roslaunch durable_gazebo_simulation spawn_mavros_instance.launch
+roslaunch multi_ugv spawn_mavros_instance.launch
 ```
 
 Lastly, every robot creates its own namespaces with topics and its movement is controlled by each individual topic. For UGV use move base corresponding to the correct robot and for the UAV perform commands through mavros and ardupilot.
@@ -119,7 +119,7 @@ takeoff 15
 ### Jackal Waypoint Publisher
 It has been implemented a [node](scripts/jackal_waypoint_publisher.py) to create waypoints for each of the jackals. This node is launched by running:
 ```
-roslaunch durable_gazebo_simulation jackal_waypoint.launch 
+roslaunch multi_ugv jackal_waypoint.launch 
 ```
 The file which contains the waypoints of the robots is [jackal_waypoints.txt](resources/jackal_waypoints.txt). This file must comply with the structure described in the first line
 ```

@@ -1,0 +1,7 @@
+set(coordinates_waypoint_manager_SETUP_PY_SETUP_MODULE "distutils.core")
+set(coordinates_waypoint_manager_SETUP_PY_VERSION "0.0.0")
+set(coordinates_waypoint_manager_SETUP_PY_SCRIPTS "")
+set(coordinates_waypoint_manager_SETUP_PY_PACKAGES "coordinates_waypoint_manager_ros")
+set(coordinates_waypoint_manager_SETUP_PY_PACKAGE_DIRS "src/coordinates_waypoint_manager_ros")
+set(coordinates_waypoint_manager_SETUP_PY_MODULES "")
+set(coordinates_waypoint_manager_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,8 @@
+prefix=/home/irsg/Multi-UGV/devel/.private/point_cloud_localization
+
+Name: point_cloud_localization
+Description: Description of point_cloud_localization
+Version: 0.0.0
+Cflags: -I/home/irsg/Multi-UGV/src/LOCUS/point_cloud_localization/include
+Libs: -L${prefix}/lib -lpoint_cloud_localization
+Requires: diagnostic_msgs geometry_utils parameter_utils pcl_ros roscpp tf2_ros visualization_msgs frontend_utils

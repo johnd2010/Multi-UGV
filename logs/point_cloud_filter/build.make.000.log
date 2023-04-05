@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target point_cloud_filter[0m
+[35m[1mScanning dependencies of target point_cloud_filter_gencfg[0m
+[ 10%] [34m[1mGenerating dynamic reconfigure files from cfg/BodyFilter.cfg: /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/include/point_cloud_filter/BodyFilterConfig.h /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/lib/python3/dist-packages/point_cloud_filter/cfg/BodyFilterConfig.py[0m
+[ 20%] [34m[1mGenerating dynamic reconfigure files from cfg/CustomVoxelGrid.cfg: /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/include/point_cloud_filter/CustomVoxelGridConfig.h /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/lib/python3/dist-packages/point_cloud_filter/cfg/CustomVoxelGridConfig.py[0m
+[ 30%] [34m[1mGenerating dynamic reconfigure files from cfg/NormalComputation.cfg: /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/include/point_cloud_filter/NormalComputationConfig.h /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/lib/python3/dist-packages/point_cloud_filter/cfg/NormalComputationConfig.py[0m
+Generating reconfiguration files for CustomVoxelGrid in point_cloud_filter
+Wrote header file in /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/include/point_cloud_filter/CustomVoxelGridConfig.h
+Generating reconfiguration files for BodyFilter in point_cloud_filter
+Generating reconfiguration files for NormalComputation in point_cloud_filter
+Wrote header file in /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/include/point_cloud_filter/NormalComputationConfig.h
+Wrote header file in /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/include/point_cloud_filter/BodyFilterConfig.h
+[ 40%] [32mBuilding CXX object CMakeFiles/point_cloud_filter.dir/src/custom_voxel_grid.cc.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/point_cloud_filter.dir/src/PointCloudFilter.cc.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/point_cloud_filter.dir/src/body_filter.cc.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/point_cloud_filter.dir/src/normal_computation.cc.o[0m
+[ 70%] Built target point_cloud_filter_gencfg
+[ 80%] [32m[1mLinking CXX shared library /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/lib/libpoint_cloud_filter.so[0m
+[ 80%] Built target point_cloud_filter
+[35m[1mScanning dependencies of target point_cloud_filter_node[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/point_cloud_filter_node.dir/src/point_cloud_filter.cc.o[0m
+[100%] [32m[1mLinking CXX executable /home/irsg/Multi-UGV/devel/.private/point_cloud_filter/lib/point_cloud_filter/point_cloud_filter_node[0m
+[100%] Built target point_cloud_filter_node

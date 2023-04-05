@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/irsg/Multi-UGV/devel/.private/durable_gazebo_simulation/setup.sh

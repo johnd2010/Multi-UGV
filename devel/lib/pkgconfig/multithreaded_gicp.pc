@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/multithreaded_gicp/lib/pkgconfig/multithreaded_gicp.pc

@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/roseus/ros/coordinates_waypoint_manager/msg/WaypointRequest.l

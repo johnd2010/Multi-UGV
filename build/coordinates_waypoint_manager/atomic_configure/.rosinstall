@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/setup.sh

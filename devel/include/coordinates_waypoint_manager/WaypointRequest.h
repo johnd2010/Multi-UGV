@@ -1,0 +1,1 @@
+/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/include/coordinates_waypoint_manager/WaypointRequest.h
