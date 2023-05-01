@@ -1,6 +1,0 @@
-devel_space: /home/irsg/Multi-UGV/devel
-install: false
-install_space: /home/irsg/Multi-UGV/install
-profile: default
-source_space: /home/irsg/Multi-UGV/src
-workspace: /home/irsg/Multi-UGV

@@ -1,8 +1,0 @@
-prefix=/home/irsg/Multi-UGV/install
-
-Name: evora_topological_map
-Description: Description of evora_topological_map
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

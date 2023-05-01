@@ -1,8 +1,0 @@
-prefix=/home/irsg/Multi-UGV/devel/.private/multi_ugv
-
-Name: multi_ugv
-Description: Description of multi_ugv
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,1 +1,0 @@
-/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/common-lisp/ros/coordinates_waypoint_manager/msg/_package.lisp

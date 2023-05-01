@@ -1,1 +1,0 @@
-/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/lib/python3/dist-packages/coordinates_waypoint_manager/msg/__init__.py

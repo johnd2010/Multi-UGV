@@ -1,1 +1,0 @@
-/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_managerConfig-version.cmake
