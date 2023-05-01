@@ -2637,8 +2637,8 @@ CMakeFiles/control_msgs_generate_messages_eus.dir/clean:
 # Target rules for target CMakeFiles/_run_tests_multi_jackal_control_roslaunch-check_launch_jackal_control.launch.dir
 
 # All Build rule for target.
-CMakeFiles/_run_tests_multi_jackal_control_roslaunch-check_launch_jackal_control.launch.dir/all: CMakeFiles/clean_test_results_multi_jackal_control.dir/all
 CMakeFiles/_run_tests_multi_jackal_control_roslaunch-check_launch_jackal_control.launch.dir/all: CMakeFiles/tests.dir/all
+CMakeFiles/_run_tests_multi_jackal_control_roslaunch-check_launch_jackal_control.launch.dir/all: CMakeFiles/clean_test_results_multi_jackal_control.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_multi_jackal_control_roslaunch-check_launch_jackal_control.launch.dir/build.make CMakeFiles/_run_tests_multi_jackal_control_roslaunch-check_launch_jackal_control.launch.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_multi_jackal_control_roslaunch-check_launch_jackal_control.launch.dir/build.make CMakeFiles/_run_tests_multi_jackal_control_roslaunch-check_launch_jackal_control.launch.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irsg/Multi-UGV/build/multi_jackal_control/CMakeFiles --progress-num= "Built target _run_tests_multi_jackal_control_roslaunch-check_launch_jackal_control.launch"

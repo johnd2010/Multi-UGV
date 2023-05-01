@@ -1,19 +1,19 @@
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_managerConfig-version.cmake, /home/irsg/Multi-UGV/devel/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_managerConfig-version.cmake)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_managerConfig.cmake, /home/irsg/Multi-UGV/devel/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_managerConfig.cmake)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_manager-msg-paths.cmake, /home/irsg/Multi-UGV/devel/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_manager-msg-paths.cmake)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_manager-msg-extras.cmake, /home/irsg/Multi-UGV/devel/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_manager-msg-extras.cmake)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/gennodejs/ros/coordinates_waypoint_manager/_index.js, /home/irsg/Multi-UGV/devel/share/gennodejs/ros/coordinates_waypoint_manager/_index.js)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/gennodejs/ros/coordinates_waypoint_manager/msg/WaypointRequest.js, /home/irsg/Multi-UGV/devel/share/gennodejs/ros/coordinates_waypoint_manager/msg/WaypointRequest.js)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/gennodejs/ros/coordinates_waypoint_manager/msg/_index.js, /home/irsg/Multi-UGV/devel/share/gennodejs/ros/coordinates_waypoint_manager/msg/_index.js)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/common-lisp/ros/coordinates_waypoint_manager/msg/coordinates_waypoint_manager-msg.asd, /home/irsg/Multi-UGV/devel/share/common-lisp/ros/coordinates_waypoint_manager/msg/coordinates_waypoint_manager-msg.asd)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/common-lisp/ros/coordinates_waypoint_manager/msg/WaypointRequest.lisp, /home/irsg/Multi-UGV/devel/share/common-lisp/ros/coordinates_waypoint_manager/msg/WaypointRequest.lisp)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/common-lisp/ros/coordinates_waypoint_manager/msg/_package.lisp, /home/irsg/Multi-UGV/devel/share/common-lisp/ros/coordinates_waypoint_manager/msg/_package.lisp)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/common-lisp/ros/coordinates_waypoint_manager/msg/_package_WaypointRequest.lisp, /home/irsg/Multi-UGV/devel/share/common-lisp/ros/coordinates_waypoint_manager/msg/_package_WaypointRequest.lisp)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/roseus/ros/coordinates_waypoint_manager/manifest.l, /home/irsg/Multi-UGV/devel/share/roseus/ros/coordinates_waypoint_manager/manifest.l)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/share/roseus/ros/coordinates_waypoint_manager/msg/WaypointRequest.l, /home/irsg/Multi-UGV/devel/share/roseus/ros/coordinates_waypoint_manager/msg/WaypointRequest.l)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/include/coordinates_waypoint_manager/WaypointRequest.h, /home/irsg/Multi-UGV/devel/include/coordinates_waypoint_manager/WaypointRequest.h)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/lib/pkgconfig/coordinates_waypoint_manager.pc, /home/irsg/Multi-UGV/devel/lib/pkgconfig/coordinates_waypoint_manager.pc)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/lib/python3/dist-packages/coordinates_waypoint_manager/__init__.py, /home/irsg/Multi-UGV/devel/lib/python3/dist-packages/coordinates_waypoint_manager/__init__.py)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/lib/python3/dist-packages/coordinates_waypoint_manager/msg/__init__.py, /home/irsg/Multi-UGV/devel/lib/python3/dist-packages/coordinates_waypoint_manager/msg/__init__.py)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/lib/python3/dist-packages/coordinates_waypoint_manager/msg/_WaypointRequest.py, /home/irsg/Multi-UGV/devel/lib/python3/dist-packages/coordinates_waypoint_manager/msg/_WaypointRequest.py)
-Linked: (/home/irsg/Multi-UGV/devel/.private/coordinates_waypoint_manager/lib/python3/dist-packages/coordinates_waypoint_manager_ros/__init__.py, /home/irsg/Multi-UGV/devel/lib/python3/dist-packages/coordinates_waypoint_manager_ros/__init__.py)
+Symlinking /home/irsg/Multi-UGV/devel/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_managerConfig-version.cmake
+Symlinking /home/irsg/Multi-UGV/devel/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_managerConfig.cmake
+Symlinking /home/irsg/Multi-UGV/devel/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_manager-msg-paths.cmake
+Symlinking /home/irsg/Multi-UGV/devel/share/coordinates_waypoint_manager/cmake/coordinates_waypoint_manager-msg-extras.cmake
+Symlinking /home/irsg/Multi-UGV/devel/share/gennodejs/ros/coordinates_waypoint_manager/_index.js
+Symlinking /home/irsg/Multi-UGV/devel/share/gennodejs/ros/coordinates_waypoint_manager/msg/WaypointRequest.js
+Symlinking /home/irsg/Multi-UGV/devel/share/gennodejs/ros/coordinates_waypoint_manager/msg/_index.js
+Symlinking /home/irsg/Multi-UGV/devel/share/common-lisp/ros/coordinates_waypoint_manager/msg/coordinates_waypoint_manager-msg.asd
+Symlinking /home/irsg/Multi-UGV/devel/share/common-lisp/ros/coordinates_waypoint_manager/msg/WaypointRequest.lisp
+Symlinking /home/irsg/Multi-UGV/devel/share/common-lisp/ros/coordinates_waypoint_manager/msg/_package.lisp
+Symlinking /home/irsg/Multi-UGV/devel/share/common-lisp/ros/coordinates_waypoint_manager/msg/_package_WaypointRequest.lisp
+Symlinking /home/irsg/Multi-UGV/devel/share/roseus/ros/coordinates_waypoint_manager/manifest.l
+Symlinking /home/irsg/Multi-UGV/devel/share/roseus/ros/coordinates_waypoint_manager/msg/WaypointRequest.l
+Symlinking /home/irsg/Multi-UGV/devel/include/coordinates_waypoint_manager/WaypointRequest.h
+Symlinking /home/irsg/Multi-UGV/devel/lib/pkgconfig/coordinates_waypoint_manager.pc
+Symlinking /home/irsg/Multi-UGV/devel/lib/python3/dist-packages/coordinates_waypoint_manager/__init__.py
+Symlinking /home/irsg/Multi-UGV/devel/lib/python3/dist-packages/coordinates_waypoint_manager/msg/__init__.py
+Symlinking /home/irsg/Multi-UGV/devel/lib/python3/dist-packages/coordinates_waypoint_manager/msg/_WaypointRequest.py
+Symlinking /home/irsg/Multi-UGV/devel/lib/python3/dist-packages/coordinates_waypoint_manager_ros/__init__.py

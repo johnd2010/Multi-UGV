@@ -1,8 +1,0 @@
-prefix=/home/irsg/Multi-UGV/devel/.private/frontend_utils
-
-Name: frontend_utils
-Description: Description of frontend_utils
-Version: 0.1.0
-Cflags: -I/home/irsg/Multi-UGV/src/common_nebula_slam/frontend_utils/include
-Libs: -L${prefix}/lib 
-Requires: 

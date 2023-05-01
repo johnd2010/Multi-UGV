@@ -1,1 +1,0 @@
-/home/irsg/Multi-UGV/devel/.private/sensor_description/lib/pkgconfig/sensor_description.pc

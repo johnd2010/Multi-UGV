@@ -1,5 +1,0 @@
-Symlinking /home/irsg/Multi-UGV/devel/share/point_cloud_odometry/cmake/point_cloud_odometryConfig-version.cmake
-Symlinking /home/irsg/Multi-UGV/devel/share/point_cloud_odometry/cmake/point_cloud_odometryConfig.cmake
-Symlinking /home/irsg/Multi-UGV/devel/lib/libpoint_cloud_odometry.so
-Symlinking /home/irsg/Multi-UGV/devel/lib/pkgconfig/point_cloud_odometry.pc
-Symlinking /home/irsg/Multi-UGV/devel/lib/point_cloud_odometry/point_cloud_odometry_node

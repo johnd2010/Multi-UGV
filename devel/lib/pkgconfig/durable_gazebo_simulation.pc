@@ -1,1 +1,0 @@
-/home/irsg/Multi-UGV/devel/.private/durable_gazebo_simulation/lib/pkgconfig/durable_gazebo_simulation.pc

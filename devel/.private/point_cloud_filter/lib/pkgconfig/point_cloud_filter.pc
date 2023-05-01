@@ -1,8 +1,0 @@
-prefix=/home/irsg/Multi-UGV/devel/.private/point_cloud_filter
-
-Name: point_cloud_filter
-Description: Description of point_cloud_filter
-Version: 0.0.0
-Cflags: -I/home/irsg/Multi-UGV/devel/.private/point_cloud_filter/include -I/home/irsg/Multi-UGV/src/LOCUS/point_cloud_filter/include
-Libs: -L${prefix}/lib -lpoint_cloud_filter
-Requires: roscpp parameter_utils pcl_ros frontend_utils

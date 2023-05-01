@@ -1,8 +1,0 @@
-# generated from catkin/cmake/template/pkg.context.pc.in
-CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/usr/include".split(';') if "${prefix}/include;/usr/include" != "" else []
-PROJECT_CATKIN_DEPENDS = "roscpp;message_runtime;point_cloud_filter;point_cloud_odometry;point_cloud_localization;point_cloud_mapper;geometry_utils;parameter_utils;pcl_ros;pcl_conversions;eigen_conversions;core_msgs;diagnostic_msgs;geometry_msgs;nav_msgs;sensor_msgs;std_msgs;visualization_msgs;frontend_utils;tf;tf2;tf2_ros;tf2_geometry_msgs;tf2_sensor_msgs;dynamic_reconfigure;sensor_description;message_filters".replace(';', ' ')
-PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-llocus;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_timer.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0".split(';') if "-llocus;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_timer.so.1.71.0;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0" != "" else []
-PROJECT_NAME = "locus"
-PROJECT_SPACE_DIR = "/home/irsg/Multi-UGV/install"
-PROJECT_VERSION = "0.0.0"

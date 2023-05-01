@@ -1,3 +1,3 @@
-Linked: (/home/irsg/Multi-UGV/devel/.private/evora_topological_map/share/evora_topological_map/cmake/evora_topological_mapConfig-version.cmake, /home/irsg/Multi-UGV/devel/share/evora_topological_map/cmake/evora_topological_mapConfig-version.cmake)
-Linked: (/home/irsg/Multi-UGV/devel/.private/evora_topological_map/share/evora_topological_map/cmake/evora_topological_mapConfig.cmake, /home/irsg/Multi-UGV/devel/share/evora_topological_map/cmake/evora_topological_mapConfig.cmake)
-Linked: (/home/irsg/Multi-UGV/devel/.private/evora_topological_map/lib/pkgconfig/evora_topological_map.pc, /home/irsg/Multi-UGV/devel/lib/pkgconfig/evora_topological_map.pc)
+Symlinking /home/irsg/Multi-UGV/devel/share/evora_topological_map/cmake/evora_topological_mapConfig-version.cmake
+Symlinking /home/irsg/Multi-UGV/devel/share/evora_topological_map/cmake/evora_topological_mapConfig.cmake
+Symlinking /home/irsg/Multi-UGV/devel/lib/pkgconfig/evora_topological_map.pc

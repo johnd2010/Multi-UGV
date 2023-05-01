@@ -1,8 +1,0 @@
-[35m[1mScanning dependencies of target locus[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/locus.dir/src/Locus.cc.o[0m
-[ 50%] [32m[1mLinking CXX shared library /home/irsg/Multi-UGV/devel/.private/locus/lib/liblocus.so[0m
-[ 50%] Built target locus
-[35m[1mScanning dependencies of target locus_node[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/locus_node.dir/src/locus_node.cc.o[0m
-[100%] [32m[1mLinking CXX executable /home/irsg/Multi-UGV/devel/.private/locus/lib/locus/locus_node[0m
-[100%] Built target locus_node

@@ -1,1 +1,0 @@
-/home/irsg/Multi-UGV/devel/.private/core_msgs/lib/python3/dist-packages/core_msgs/msg/_MapInfo.py

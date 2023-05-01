@@ -1,8 +1,0 @@
-prefix=/home/irsg/Multi-UGV/devel/.private/core_msgs
-
-Name: core_msgs
-Description: Description of core_msgs
-Version: 0.0.0
-Cflags: -I/home/irsg/Multi-UGV/devel/.private/core_msgs/include
-Libs: -L${prefix}/lib 
-Requires: diagnostic_msgs std_msgs geometry_msgs sensor_msgs message_runtime

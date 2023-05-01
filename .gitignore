@@ -1,3 +1,9 @@
 src/.vscode/*
 src/*.zip
 *.bag
+.vscode/c_cpp_properties.json
+.vscode/settings.json
+build/*
+logs/*
+devel/*
+.catkin_tools/*

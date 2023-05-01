@@ -1,8 +1,0 @@
-prefix=/home/irsg/Multi-UGV/install
-
-Name: point_cloud_mapper
-Description: Description of point_cloud_mapper
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lpoint_cloud_mapper
-Requires: roscpp std_msgs parameter_utils geometry_utils frontend_utils

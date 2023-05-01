@@ -1,1 +1,0 @@
-/home/irsg/Multi-UGV/devel/.private/frontend_utils/lib/pkgconfig/frontend_utils.pc

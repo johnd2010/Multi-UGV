@@ -1,1 +1,0 @@
-/home/irsg/Multi-UGV/devel/.private/point_cloud_merger/lib/pkgconfig/point_cloud_merger.pc

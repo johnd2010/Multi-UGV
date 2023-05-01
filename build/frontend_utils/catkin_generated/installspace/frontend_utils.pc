@@ -1,8 +1,0 @@
-prefix=/home/irsg/Multi-UGV/install
-
-Name: frontend_utils
-Description: Description of frontend_utils
-Version: 0.1.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: 
