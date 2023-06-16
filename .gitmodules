@@ -1,0 +1,4 @@
+[submodule "LOCUS"]
+ path = src/LOCUS
+ url = https://github.com/johnd2010/LOCUS.git
+ branch = feature/jackal_test

@@ -1,9 +1,10 @@
-src/.vscode/*
 src/*.zip
 *.bag
-.vscode/c_cpp_properties.json
-.vscode/settings.json
 build/*
 logs/*
 devel/*
 .catkin_tools/*
+*.vscode*
+src/Multi_Robot_Simulation/.vscode/settings.json
+src/multi_jackal/.vscode/settings.json
+src/jackal_robot_localization/.vscode/settings.json
