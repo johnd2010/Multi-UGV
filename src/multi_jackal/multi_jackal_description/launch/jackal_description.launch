@@ -10,9 +10,9 @@
   <arg name="config_id" default="0"/>
   <arg name="gps_rate"  default="1"/>
   <arg name="gps_drift" default="0.0001"/>
-  <arg name="latitude" default="38.5409800049"/>
-  <arg name="longitude" default="-7.96170743709"/>  
-  <arg name="yawoffset" default="1.57"/>  
+  <arg name="latitude" default="38.54026098968023"/>
+  <arg name="longitude" default="-7.962949545159461"/> 
+  <arg name="yawoffset" default="0.0"/>  
   <arg name="heading" default="0"/>  
 
   <!-- Get the robot description. The second line in command just sets a flag

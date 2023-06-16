@@ -5,11 +5,11 @@
   <arg name="x" default="0"/> 
   <arg name="y" default="0"/>
   <arg name="z" default="0"/>
-  <arg name="yaw" default="3.14"/>
-  <arg name="latitude" default="38.5409800049"/>
-  <arg name="longitude" default="-7.96170743709"/> 
-  <arg name="heading" default="0.0"/> 
-  <arg name="yawoffset" default="1.57"/> 
+  <arg name="yaw" default="0.0"/>
+  <arg name="latitude" default="38.54026098968023"/>
+  <arg name="longitude" default="-7.962949545159461"/> 
+  <arg name="heading" default="90"/> 
+  <arg name="yawoffset" default="0.0"/> 
 
     <!-- FOR ROS MELODIC -->
     <!--include file="$(find timed_roslaunch)/timed_roslaunch.launch"-->
@@ -22,7 +22,7 @@
       <arg name="yaw" value="$(arg yaw)"/>
       <arg name="use_waypoint_coordenator" value="true"/>
       <arg name="use_gps_pose_relay" value="true"/>
-      <arg name="use_navsat" value="false"/>
+      <!-- <arg name="use_navsat" value="false"/> -->
       <arg name="use_global_tf" value="false"/>
       <arg name="latitude"  value="$(arg latitude)"/>
       <arg name="longitude" value="$(arg longitude)"/> 
@@ -31,11 +31,10 @@
        
     </include>
     
-
     <include ns="$(arg ns)" file="$(find jackal_robot_localization)/launch/navsat_transform_only_jackal_sim.launch">
     <arg name="ns" default="$(arg ns)" />
     </include>
-    <!-- <include ns="$(arg ns)" file="$(find georeference_pcl)/launch/matching.launch" if="$(arg pcl_match)" /> -->
+    
 
     <node ns="$(arg ns)" pkg="jackal_robot_localization" type="ekf_localization_node" name="ekf_localization_global">
         <rosparam command="load" file="$(find jackal_robot_localization)/params/ekf_jackal_matching_sim.yaml" subst_value="true"/>

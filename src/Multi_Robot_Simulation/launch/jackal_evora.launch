@@ -9,9 +9,7 @@
       <arg name="ns" default="$(arg ns)" />
       <arg name="x" value="$(arg x)"/> 
       <arg name="y" value="$(arg y)"/>
-      <arg name="z" value="0.01"/>
-      <arg name="latitude" value="38.54099435020819"/>
-      <arg name="longitude" value="-7.961716729550872"/> 
+      <arg name="z" value="1"/>
     </include>
 
 <!-- switch the next launch file for different environments. solar_farm is the one eddited only with solar panels only.  agriculture_world is the native clearpath environment. -->
@@ -159,7 +157,7 @@
 
 
 
-    <node pkg="tf" type="static_transform_publisher" name="map_broadcaster1" args="0 0 0 0 0 0 1 $(arg ns)/map $(arg ns)/map3d 100" />
+    <!-- <node pkg="tf" type="static_transform_publisher" name="map_broadcaster1" args="0 0 0 0 0 0 1 $(arg ns)/map $(arg ns)/map3d 100" /> -->
     <!-- <node pkg="tf" type="static_transform_publisher" name="map_broadcaster2" args="0 0 0 0 0 0 1 J2/map J2/map3d 100" />
     <node pkg="tf" type="static_transform_publisher" name="map_broadcaster3" args="0 0 0 0 0 0 1 J3/map J3/map3d 100" /> -->
     <!-- <node pkg="tf" type="static_transform_publisher" name="map_broadcaster4" args="0 0 0 0 0 0 1 J4/map J4/map3d 100" /> -->

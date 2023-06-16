@@ -47,7 +47,7 @@
     <arg name="use_move_base" value="true"/>
     <arg name="x"             value="0"/>
     <arg name="y"             value="3"/>
-    <arg name="yaw"           value="-1.57"/>
+    <arg name="yaw"           value="-0.0"/>
   </include>
   
   <!-- View in RVIZ. -->

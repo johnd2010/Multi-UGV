@@ -16,7 +16,7 @@
       <frameId>$(arg namespace)/base_link</frameId>
       <accelDrift>0.00 0.00 0.00</accelDrift>
       <accelGaussianNoise>0.001 0.001 0.001</accelGaussianNoise>
-      <yawOffset>1.57</yawOffset>
+      <yawOffset>0.0</yawOffset>
       <rateDrift>0.00 0.00 0.00 </rateDrift>
       <rateGaussianNoise>0.001 0.001 0.001 </rateGaussianNoise>
       <headingDrift>0.00</headingDrift>

@@ -21,10 +21,10 @@
   <arg name="gps_drift" default="0.0001"/>
   <arg name="global_frame" default="$(arg ns)/odom"/>
   <arg name="local_frame"  default="$(arg ns)/odom"/>
-  <arg name="latitude" default="38.5409800049"/>
-  <arg name="longitude" default="-7.96170743709"/> 
+  <arg name="latitude" default="38.54026098968023"/>
+  <arg name="longitude" default="-7.962949545159461"/> 
   <arg name="heading" default="0.0"/> 
-  <arg name="yawoffset" default="1.57"/>  
+  <arg name="yawoffset" default="0.0"/>  
   
   <!-- Launch the control portion of the Jackal robot. -->
   <include file="$(find multi_jackal_control)/launch/jackal_control.launch">
@@ -53,6 +53,7 @@
     <arg name="roll"  value="$(arg roll)"/>
     <arg name="pitch" value="$(arg pitch)"/>
     <arg name="yaw"   value="$(arg yaw)"/>
+    <arg name="yawoffset" value="$(arg yawoffset)"/>  
     <arg name="use_move_base"  value="$(arg use_move_base)"/>
     <arg name="use_global_tf"  value="$(arg use_global_tf)"/>
     <arg name="use_global_ekf" value="$(arg use_global_ekf)"/>

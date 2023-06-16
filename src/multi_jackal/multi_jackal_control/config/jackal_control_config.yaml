@@ -14,6 +14,12 @@ jackal_velocity_controller:
   k_l: 0.1
   k_r: 0.1
 
+# gazebo_ros_control/pid_gains:
+#   front_left_wheel: {p: 0.1, i: 0.01, d: 0.00}
+#   front_right_wheel: {p: 0.1, i: 0.01, d: 0.00}
+#   rear_left_wheel: {p: 0.1, i: 0.01, d: 0.00}
+#   rear_right_wheel: {p: 0.1, i: 0.01, d: 0.00}
+
   # Odometry fused with IMU is published by jackal_robot_localization, so
   # no need to publish a TF based on encoders alone.
   enable_odom_tf: false

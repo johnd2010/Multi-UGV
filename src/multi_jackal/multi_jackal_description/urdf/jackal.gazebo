@@ -37,7 +37,7 @@
       <velocityTopicName>navsat/vel</velocityTopicName>
       <referenceLatitude>$(arg latitude)</referenceLatitude>
       <referenceLongitude>$(arg longitude)</referenceLongitude>  
-      <referenceHeading>0</referenceHeading>
+      <referenceHeading>$(arg heading)</referenceHeading>
       <referenceAltitude>0</referenceAltitude>
       <gaussianNoise>0.0 0.0 0.0</gaussianNoise>
       <velocityGaussianNoise>0 0 0</velocityGaussianNoise>
@@ -56,13 +56,22 @@
       <velocityTopicName>gt/vel</velocityTopicName>
       <referenceLatitude>$(arg latitude)</referenceLatitude>
       <referenceLongitude>$(arg longitude)</referenceLongitude>  
-      <referenceHeading>0</referenceHeading>
+      <referenceHeading>$(arg heading)</referenceHeading>
       <referenceAltitude>0</referenceAltitude>
       <gaussianNoise>0.0 0.0 0.0</gaussianNoise>
       <velocityGaussianNoise>0 0 0</velocityGaussianNoise>
       <drift>0 0 0</drift>
     </plugin>
   </gazebo>
+
+  <!-- <gazebo>
+    <plugin name="gps_plugin" filename="libgazebo_gps_plugin.so">
+      <robotNamespace>/$(arg namespace)</robotNamespace>
+      <update_rate>10</update_rate>
+      <gpsNoise>false</gpsNoise>      
+      <topic>gt/fix2</topic>
+    </plugin>
+  </gazebo> -->
 
   <gazebo reference="base_link">
     <turnGravityOff>false</turnGravityOff>
