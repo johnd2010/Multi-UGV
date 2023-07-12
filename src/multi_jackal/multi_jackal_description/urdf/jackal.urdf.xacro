@@ -54,7 +54,7 @@
       <child link="${prefix}_wheel_link" />
       <xacro:insert_block name="joint_pose" />
       <axis xyz="0 1 0" />
-      <dynamics damping="0.7" friction="0.7"/>
+      <!-- <dynamics damping="1" friction="1"/> -->
     </joint>
     <!-- In reality, Jackal has only two motors, one per side. However, it's more
          straightforward for Gazebo to simulate as if there's an actuator per wheel. -->
@@ -92,12 +92,12 @@
   </joint>
 
   <!-- Arch -->
-  <link name="arch"/>
+  <!-- <link name="arch"/>
   <joint name="top_plate_link_to_arch" type="fixed">
     <parent link="base_link" />
     <child link="arch" />
     <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
+  </joint> -->
 
   <link name="chassis_link">
     <visual>
@@ -151,12 +151,12 @@
     </inertial>
   </link>
 
-  <link name="vn100"/>
+  <!-- <link name="vn100"/>
   <joint name="imu_link_to_vn100" type="fixed">
     <parent link="imu_link" />
     <child link="vn100" />
     <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
+  </joint> -->
 
   <joint name="imu_joint" type="fixed">
     <parent link="chassis_link" />

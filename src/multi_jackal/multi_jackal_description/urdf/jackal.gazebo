@@ -18,10 +18,10 @@
       <topicName>imu/data</topicName>
       <frameId>$(arg namespace)/base_link</frameId>
       <accelDrift>0.00 0.00 0.00</accelDrift>
-      <accelGaussianNoise>0.001 0.001 0.001</accelGaussianNoise>
+      <accelGaussianNoise>0.00 0.00 0.00</accelGaussianNoise>
       <yawOffset>$(arg yawoffset)</yawOffset>
       <rateDrift>0.00 0.00 0.00 </rateDrift>
-      <rateGaussianNoise>0.001 0.001 0.001 </rateGaussianNoise>
+      <rateGaussianNoise>0.00 0.00 0.00 </rateGaussianNoise>
       <headingDrift>0.00</headingDrift>
       <headingGaussianNoise>0.001</headingGaussianNoise>
     </plugin>
