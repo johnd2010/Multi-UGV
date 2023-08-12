@@ -9,7 +9,7 @@ global_costmap:
   origin_x: -150.0
   origin_y: -150.0
   inflation_radius: 0.5
-  rolling_window: false
+  rolling_window: true
   
   #plugins:
    #- {name: static_layer, type: "costmap_2d::StaticLayer"}

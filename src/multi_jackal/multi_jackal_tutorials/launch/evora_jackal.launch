@@ -23,9 +23,9 @@
   <arg name="world"     default="empty.world"/>
   <arg name="gui"       default="false"/>
   <arg name="rviz"      default="false"/>
-  <arg name="global_frame" default="$(arg ns)/odom"/>
+  <arg name="global_frame" default="$(arg ns)/map_locus"/>
   <!-- <arg name="global_frame"  default="map"/>  -->
-  <arg name="local_frame"  default="$(arg ns)/odom"/>
+  <arg name="local_frame"  default="$(arg ns)/map"/>
   <arg name="use_global_tf"  default="true"/>
   <arg name="use_waypoint_coordenator" default="false"/>
   <arg name="use_gps_pose_relay" default="false"/>
@@ -53,7 +53,7 @@
     <arg name="ns"             value="$(arg ns)"/>
     <arg name="config"         value="$(arg config)"/>
     <arg name="config_id"      value="$(arg config_id)"/>
-    <arg name="use_move_base"  value="true"/>
+    <arg name="use_move_base"  value="false"/>
     <arg name="use_global_ekf" default="false"/>
     <arg name="x" value="$(arg x)"/> 
     <arg name="y" value="$(arg y)"/>

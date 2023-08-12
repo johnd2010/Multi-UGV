@@ -20,7 +20,7 @@
       <arg name="y" value="$(arg y)"/>
       <arg name="z" value="$(arg z)"/>
       <arg name="yaw" value="$(arg yaw)"/>
-      <arg name="use_waypoint_coordenator" value="true"/>
+      <arg name="use_waypoint_coordenator" value="false"/>
       <arg name="use_gps_pose_relay" value="true"/>
       <!-- <arg name="use_navsat" value="false"/> -->
       <arg name="use_global_tf" value="false"/>
@@ -31,9 +31,9 @@
        
     </include>
     
-    <include ns="$(arg ns)" file="$(find jackal_robot_localization)/launch/navsat_transform_only_jackal_sim.launch">
+    <!-- <include ns="$(arg ns)" file="$(find jackal_robot_localization)/launch/navsat_transform_only_jackal_sim.launch">
     <arg name="ns" default="$(arg ns)" />
-    </include>
+    </include> -->
     
 
     <node ns="$(arg ns)" pkg="jackal_robot_localization" type="ekf_localization_node" name="ekf_localization_global">
