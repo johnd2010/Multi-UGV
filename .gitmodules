@@ -2,3 +2,6 @@
  path = src/LOCUS
  url = https://github.com/johnd2010/LOCUS.git
  branch = feature/jackal_test
+[submodule "src/frontier_publisher"]
+	path = src/frontier_publisher
+	url = https://github.com/johnd2010/frontier_publisher.git
