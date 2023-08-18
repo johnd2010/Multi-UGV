@@ -24,7 +24,9 @@
   <arg name="latitude" default="38.54026098968023"/>
   <arg name="longitude" default="-7.962949545159461"/> 
   <arg name="heading" default="0.0"/> 
-  <arg name="yawoffset" default="0.0"/>  
+  <arg name="yawoffset" default="0.0"/> 
+  <arg name="move_base_global_box_size" default="10"/>
+  <arg name="move_base_local_box_size" default="5"/>  
   
   <!-- Launch the control portion of the Jackal robot. -->
   <include file="$(find multi_jackal_control)/launch/jackal_control.launch">
@@ -41,7 +43,7 @@
     <arg name="latitude"  value="$(arg latitude)"/>
     <arg name="longitude" value="$(arg longitude)"/>   
     <arg name="heading" value="$(arg heading)"/>   
-    <arg name="yawoffset" value="$(arg yawoffset)"/>   
+    <arg name="yawoffset" value="$(arg yawoffset)"/>  
   </include>
 
   <!-- Start the jackal navigation. -->
@@ -59,6 +61,8 @@
     <arg name="use_global_ekf" value="$(arg use_global_ekf)"/>
     <arg name="global_frame" value="$(arg global_frame)"/>
     <arg name="local_frame"  value="$(arg local_frame)"/>
+    <arg name="move_base_global_box_size" value="$(arg move_base_global_box_size)"/>
+    <arg name="move_base_local_box_size" value="$(arg move_base_local_box_size)"/> 
   </include>
 
   <!-- Spawn the model into gazebo. -->

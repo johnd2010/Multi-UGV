@@ -35,6 +35,9 @@
   <arg name="longitude" default="-7.962949545159461"/> 
   <arg name="heading" default="0.0"/> 
   <arg name="yawoffset" default="0.0"/>  
+  
+  <arg name="move_base_global_box_size" default="10"/>  
+  <arg name="move_base_local_box_size" default="5"/>
 
 
   <group ns="$(arg ns)" if="$(arg use_waypoint_coordenator)">
@@ -53,7 +56,7 @@
     <arg name="ns"             value="$(arg ns)"/>
     <arg name="config"         value="$(arg config)"/>
     <arg name="config_id"      value="$(arg config_id)"/>
-    <arg name="use_move_base"  value="false"/>
+    <arg name="use_move_base"  value="true"/>
     <arg name="use_global_ekf" default="false"/>
     <arg name="x" value="$(arg x)"/> 
     <arg name="y" value="$(arg y)"/>
@@ -67,6 +70,8 @@
     <arg name="longitude" value="$(arg longitude)"/> 
     <arg name="heading" value="$(arg heading)"/> 
     <arg name="yawoffset" value="$(arg yawoffset)"/> 
+    <arg name="move_base_global_box_size" value="$(arg move_base_global_box_size)"/>
+    <arg name="move_base_local_box_size" value="$(arg move_base_local_box_size)"/>
   </include>
 
 

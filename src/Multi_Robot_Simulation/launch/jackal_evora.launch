@@ -4,12 +4,17 @@
   <arg name="ns" default="J1" />
   <arg name="x" default="-83.5235812543"/> 
   <arg name="y" default="-116.756596676"/>
+  <arg name="z" default="0"/>
+  <arg name="move_base_global_box_size" default="10"/>
+  <arg name="move_base_local_box_size" default="5"/>
 
     <include file="$(find multi_ugv)/launch/spawn-a-jackal.launch">
       <arg name="ns" default="$(arg ns)" />
       <arg name="x" value="$(arg x)"/> 
       <arg name="y" value="$(arg y)"/>
-      <arg name="z" value="1"/>
+      <arg name="z" value="$(arg z)"/>
+      <arg name="move_base_global_box_size" value="$(arg move_base_global_box_size)"/>
+      <arg name="move_base_local_box_size" value="$(arg move_base_local_box_size)"/>      
     </include>
 
 <!-- switch the next launch file for different environments. solar_farm is the one eddited only with solar panels only.  agriculture_world is the native clearpath environment. -->
@@ -138,7 +143,7 @@
       <arg name="longitude" value="-7.961716729550872"/> 
     </include> -->
  
-    <include file="$(find evora_topological_map)/launch/evora_topology.launch"/>
+    <!-- <include file="$(find evora_topological_map)/launch/evora_topology.launch"/> -->
     <!-- <include file="$(find fusion)/launch/fusion.launch"/> -->
 
 

@@ -11,6 +11,10 @@
   <arg name="heading" default="90"/> 
   <arg name="yawoffset" default="0.0"/> 
 
+  <!-- Adding it for appending LOCUS2.0 window -->
+  <arg name="move_base_global_box_size" default="10"/>
+  <arg name="move_base_local_box_size" default="5"/>
+
     <!-- FOR ROS MELODIC -->
     <!--include file="$(find timed_roslaunch)/timed_roslaunch.launch"-->
     <!-- FOR ROS KINETIC -->
@@ -28,7 +32,8 @@
       <arg name="longitude" value="$(arg longitude)"/> 
       <arg name="heading" value="$(arg heading)"/> 
       <arg name="yawoffset" value="$(arg yawoffset)"/> 
-       
+      <arg name="move_base_global_box_size" value="$(arg move_base_global_box_size)"/>
+      <arg name="move_base_local_box_size" value="$(arg move_base_local_box_size)"/>    
     </include>
     
     <!-- <include ns="$(arg ns)" file="$(find jackal_robot_localization)/launch/navsat_transform_only_jackal_sim.launch">
